@@ -1,60 +1,58 @@
 # Cognitive Dashboard
 
-Интерактивное Streamlit-приложение для предсказания когнитивных показателей на основе параметров образа жизни.
+An interactive Streamlit application for predicting cognitive metrics based on lifestyle parameters.
 
-## Описание проекта
+## Project Description
 
-Проект начался с анализа реального датасета, содержащего информацию о сне, кофеине, физической активности, уровне стресса и результатах когнитивных тестов. На этапе разведывательного анализа были исследованы:
+The project started with the analysis of a real dataset containing information about sleep, caffeine intake, physical activity, stress levels, and cognitive test results. During the exploratory data analysis stage, the following aspects were studied:
 
-- Корреляции между часами сна, кофеином, активностью и когнитивными метриками
-- Выбросы и аномалии в данных
-- Гипотезы о влиянии сна, кофеина и активности на память и реакцию
-- Влияние массы тела на качество сна и когнитивные функции
-- Многофакторная сегментация по полу, возрасту, активности и стрессу
+- Correlations between sleep hours, caffeine, activity, and cognitive metrics
+- Outliers and anomalies in the data
+- Hypotheses about the influence of sleep, caffeine, and activity on memory and reaction
+- The effect of body weight on sleep quality and cognitive performance
+- Multifactor segmentation by gender, age, activity, and stress
 
-После этого был создан интерактивный дашборд, где пользователь может ввести свои параметры и получить:
+After that, an interactive dashboard was created where the user can input their parameters and receive:
 
-- Предсказания когнитивных метрик (внимание, память, время реакции)
-- Персонализированные рекомендации по улучшению состояния
+- Predictions of cognitive metrics (attention, memory, reaction time)
+- Personalized recommendations for improvement
 
-Проект реализован на Python с использованием библиотеки Streamlit и моделей Ridge Regression. 
+The project is implemented in Python using the Streamlit library and Ridge Regression models.
 
-## Входные данные пользователя в приложении
+## User Input in the Application
 
-- Возраст, пол, вес и рост (для расчета BMI)
-- Количество часов сна в сутки
-- Количество кружек кофе в день
-- Уровень физической активности (в часах в неделю)
+- Age, gender, weight, and height (for BMI calculation)
+- Number of sleep hours per day
+- Number of cups of coffee per day
+- Level of physical activity (in hours per week)
 
-## Выходные метрики
+## Output Metrics
 
-- Точность памяти (N-Back Accuracy)
-- Время реакции (PVT и Stroop)
-- Уровень дневной сонливости
+- Memory accuracy (N-Back Accuracy)
+- Reaction time (PVT and Stroop)
+- Level of daytime sleepiness
 
-## Рекомендации
+## Recommendations
 
-На основе анализа данных и выявленных закономерностей приложение предлагает улучшения по сну, питанию и активности.
+Based on data analysis and identified patterns, the application provides suggestions for improving sleep, nutrition, and physical activity.
 
-## Как запустить
+## How to Run
 
-1. Клонируйте репозиторий:
-```
-git clone https://github.com/your_username/cognitive-dashboard.git
-cd cognitive-dashboard
-```
+1. Clone the repository:
+   
+   git clone https://github.com/your_username/cognitive-dashboard.git
+   cd cognitive-dashboard
 
-2. Установите зависимости:
-```
-pip install -r requirements.txt
-```
+2. Install dependencies:
+   
+  pip install -r requirements.txt
 
-3. Запустите приложение:
-```
-streamlit run app.py
-```
+3. Run the application:
 
-## Используемые технологии
+   streamlit run app.py
+
+
+## Technologies Used
 
 - Python
 - Streamlit
